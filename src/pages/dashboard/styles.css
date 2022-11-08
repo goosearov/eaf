@@ -1,0 +1,91 @@
+.dashboardContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.infoContainer {
+  width: 640px;
+  height: 336px;
+  background: #494949;
+  border-radius: 18px;
+  padding: 30px;
+}
+
+.visitorsContainer {
+  width: 640px;
+  height: 336px;
+  background: #494949;
+  border-radius: 18px;
+  padding: 30px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fff;
+}
+
+h4 {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 73px;
+  color: #e9ad62;
+  margin: 0;
+}
+
+.infoText {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
+.visitorsTable {
+  display: flex;
+  justify-content: space-between;
+}
+.visitorsGraph {
+  width: 430px;
+}
+
+.visitorsBox {
+  width: 134px;
+  height: 107px;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.visitors {
+  display: flex;
+  margin-bottom: 15px;
+}
+.visitorsText {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.visitorsNumbber {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.emptyContainer {
+  width: 100%;
+  height: 336px;
+  background: #494949;
+  border-radius: 18px;
+  padding: 30px;
+}

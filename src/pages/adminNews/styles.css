@@ -1,0 +1,63 @@
+.newsContainer {
+  width: 100%;
+  height: full;
+  background: #494949;
+  border-radius: 18px;
+  padding: 30px;
+}
+.news {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 243.9%;
+  color: #ffffff;
+}
+.underline {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.pagination {
+  display: flex;
+  margin: 0 auto;
+  width: 185px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currentPageButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #e9ad62;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.previousButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  cursor: pointer;
+}
+
+.nextButton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  cursor: pointer;
+}

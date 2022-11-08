@@ -1,0 +1,16 @@
+.pagesContainer {
+  width: 100%;
+  height: full;
+  background: #494949;
+  border-radius: 18px;
+  padding: 30px;
+}
+.pages {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 243.9%;
+  color: #ffffff;
+}
+.underline {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
