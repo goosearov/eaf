@@ -1,0 +1,52 @@
+.mainPageContainer {
+  width: 100%;
+  height: full;
+  background: #494949;
+  border-radius: 18px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.teamTable {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.teamTable th,
+.teamTable td {
+  padding: 28px 43px;
+}
+
+.teamTable thead {
+  color: #e9ad62;
+}
+
+.teamTable tbody tr {
+  background: #282828;
+  border: 15px solid #494949;
+  border-radius: 8px;
+}
+
+.teamTable tbody tr:nth-child(even) {
+  background: #626060;
+}
+
+.iconEdit * {
+  fill: #e9ad62;
+}
+
+.whiteContainer {
+  display: flex;
+  width: 250px;
+  height: 150px;
+  background: #fff;
+  border-radius: 12px;
+  align-items: center;
+  margin-right: 17px;
+  margin-bottom: 17px;
+}

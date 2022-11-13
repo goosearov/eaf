@@ -9,7 +9,6 @@ const numberFormatter = (num) => {
         num /= 1000;
         i++;
     }
-    num = num.toFixed(1);
     if (mapper[i]) return num + mapper[i];
     return num ;
 }

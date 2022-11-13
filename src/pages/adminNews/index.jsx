@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import Layout from "../../components/layout";
 import newsList from "../../data/newsList";
-import "./styles.css"
+import { ReactComponent as AddNewsIcon } from "../../assets/addNews.svg";
+import { ReactComponent as NewsRedactIcon } from "../../assets/newsRedactIcon.svg";
+import "./styles.css";
 
 const AdminNews = () => {
   const [page, setPage] = useState(0);
@@ -19,30 +22,47 @@ const AdminNews = () => {
   return (
     <Layout>
       <div className="newsContainer">
-        <h3>Страницы</h3>
+        <div className="description">
+          <h3>Страницы</h3>
+          <NavLink className="addNews" to="format">
+            <p className="newsAddTitle">Добавить новость</p>
+            <AddNewsIcon />
+          </NavLink>
+        </div>
         <div>
           <ol>
             {newsList
               .slice(page * newsPerPage, page * newsPerPage + newsPerPage)
               .map((item, index) => (
                 <div className="underline" key={index}>
-                  <li className="news">
-                    {item}
-                  </li>
-                </div>
+                <li className="pages">
+                  <div style={{display: "flex", justifyContent: "space-between"}}>
+                    <div>{item}</div>
+                    <div style={{marginRight: "10px"}}>
+                      <NewsRedactIcon />
+                    </div>
+                  </div>
+                </li>
+              </div>
               ))}
           </ol>
         </div>
         <div className="pagination">
           <div>
-            {page ? <button className="previousButton" onClick={previousPage}>{page}</button> : null}
+            {page ? (
+              <button className="previousButton" onClick={previousPage}>
+                {page}
+              </button>
+            ) : null}
           </div>
           <div>
             <button className="currentPageButton">{page + 1}</button>
           </div>
           <div>
             {page !== maxPages - 1 ? (
-              <button className="nextButton" onClick={nextPage}>{page + 2}</button>
+              <button className="nextButton" onClick={nextPage}>
+                {page + 2}
+              </button>
             ) : null}
           </div>
         </div>

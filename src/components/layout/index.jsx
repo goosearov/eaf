@@ -55,11 +55,10 @@ const Layout = ({ children }) => {
       <div className="sidebarContainer">
         <div style={{ width: isOpen ? "347px" : "90px" }} className="sidebar">
           <div className="bars">
-            {/* <img onClick={toggle} src={barnsIcon} alt="menuIcon" /> */}
             <BarsIcon onClick={toggle} />
           </div>
           {menuItem.map((item, index) => (
-            <NavLink
+            <NavLink 
               to={item.path}
               key={index}
               className="link"

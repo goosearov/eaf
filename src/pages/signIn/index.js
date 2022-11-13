@@ -24,11 +24,11 @@ const SignIn = () => {
       <form onSubmit={handleSignIn}>
         <div className="formInput">
           <label>USERNAME</label>
-          <input label="email" onChange={(e) => {setEmail(e.target.value)}} value={email}/>
+          <input onChange={(e) => {setEmail(e.target.value)}} value={email}/>
         </div>
         <div className="formInput">
           <label>PASSWORD</label>
-          <input type="password" label="password" onChange={(e) => {setPassword(e.target.value)}} value={password}/>
+          <input label="password" onChange={(e) => {setPassword(e.target.value)}} value={password}/>
         </div>
         <div className="button">
           <button className="login" type="submit">Login</button>

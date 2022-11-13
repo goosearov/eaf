@@ -61,3 +61,24 @@
   color: #000;
   cursor: pointer;
 }
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addNews {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.newsAddTitle {
+  font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #FFFFFF;
+margin-right: 25px;
+}
